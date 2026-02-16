@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff5e49;
+  --color-primary-light: #ff7a68;
+  --color-primary-lighter: #ffe7e0;
+  --color-primary-dark: #da4431;
+
+  --color-secondary: #402926;
+  --color-secondary-light: rgba(64, 41, 38, 0.77);
+
+  --color-success: #3cb13e;
+  --color-success-light: rgba(62, 181, 56, 0.6);
+
+  --color-bg-start: rgba(255, 237, 233, 0.8);
+  --color-bg-end: #fce1df;
+
+  --font-geist: Geist, sans-serif;
+  --font-inter: Inter, sans-serif;
+
+  --shadow-card: 0px 42.012px 25.617px 0px rgba(255, 94, 73, 0.05),
+    0px 18.444px 18.444px 0px rgba(255, 94, 73, 0.09),
+    0px 5.123px 10.247px 0px rgba(255, 94, 73, 0.1),
+    0px 8.009px 8.009px 0px rgba(11, 32, 103, 0.05),
+    0px 1.144px 2.288px 0px rgba(11, 32, 103, 0.14);
+  --shadow-button: 0px 7.137px 17.843px 0px rgba(255, 94, 73, 0.45);
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://assets.vercel.com/raw/upload/v1660237748/geist/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://assets.vercel.com/raw/upload/v1660237748/geist/Geist-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://assets.vercel.com/raw/upload/v1660237748/geist/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

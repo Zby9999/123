@@ -1,0 +1,46 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 2245.6 1186.78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1000011133">
+<g id="Vector 114" filter="url(#filter0_f_18_34)">
+<path d="M1663.89 720.901C1718.75 546.382 1564.23 265.128 1480.12 146.317C1618.53 165.434 1930.17 271.525 2069.47 542.952C2243.6 882.235 1595.31 939.051 1663.89 720.901Z" fill="var(--fill-0, #FF614D)" fill-opacity="0.4"/>
+</g>
+<g id="Vector 115" filter="url(#filter1_f_18_34)">
+<path d="M581.715 720.901C526.852 546.382 681.369 265.128 765.485 146.317C627.077 165.434 315.436 271.525 176.135 542.952C2.00882 882.235 650.294 939.051 581.715 720.901Z" fill="var(--fill-0, #FF614D)" fill-opacity="0.4"/>
+</g>
+<g id="Ellipse 14">
+<circle cx="1122.36" cy="704.111" r="482.666" fill="url(#paint0_linear_18_34)" fill-opacity="0.16"/>
+<circle cx="1122.36" cy="704.111" r="481.328" stroke="var(--stroke-0, white)" stroke-opacity="0.1" stroke-width="2.67652"/>
+</g>
+<g id="Ellipse 15">
+<circle cx="1122.35" cy="704.111" r="369.36" fill="url(#paint1_linear_18_34)" fill-opacity="0.16"/>
+<circle cx="1122.35" cy="704.111" r="368.022" stroke="var(--stroke-0, white)" stroke-opacity="0.1" stroke-width="2.67652"/>
+</g>
+<g id="Ellipse 16">
+<path d="M1390.01 704.111C1390.01 851.931 1270.17 971.763 1122.35 971.763C974.534 971.763 854.702 851.931 854.702 704.111C854.702 556.29 974.534 436.458 1122.35 436.458C1270.17 436.458 1390.01 556.29 1390.01 704.111Z" fill="url(#paint2_linear_18_34)" fill-opacity="0.16"/>
+<path d="M1122.35 437.796C1269.44 437.796 1388.67 557.03 1388.67 704.111C1388.67 851.192 1269.44 970.424 1122.35 970.424C975.273 970.424 856.04 851.192 856.04 704.111C856.04 557.03 975.273 437.796 1122.35 437.796Z" stroke="var(--stroke-0, white)" stroke-opacity="0.1" stroke-width="2.67652"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_18_34" x="1333.8" y="3.73527e-05" width="911.802" height="996.559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="73.1583" result="effect1_foregroundBlur_18_34"/>
+</filter>
+<filter id="filter1_f_18_34" x="-6.19591e-06" y="6.83512e-06" width="911.802" height="996.559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="73.1583" result="effect1_foregroundBlur_18_34"/>
+</filter>
+<linearGradient id="paint0_linear_18_34" x1="1122.36" y1="221.445" x2="1122.36" y2="1186.78" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_18_34" x1="1122.35" y1="334.751" x2="1122.35" y2="1073.47" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_18_34" x1="1122.35" y1="436.458" x2="1122.35" y2="971.763" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
