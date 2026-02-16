@@ -8,51 +8,63 @@ This guide explains how to deploy this project to GitHub Pages.
 - Git installed on your machine.
 - Node.js and npm installed.
 
-## Deployment Steps
+## Method 1: Automated Deployment (Recommended)
 
-1.  **Create a New Repository on GitHub**
-    - Go to [GitHub](https://github.com) and log in.
-    - Click the "+" icon in the top right and select "New repository".
-    - Name your repository (e.g., `my-landing-page` or `username.github.io`).
-    - Make sure it is set to **Public**.
-    - Click "Create repository".
-
-2.  **Initialize Git and Push to GitHub**
-    Open your terminal in the project directory and run the following commands (replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual details):
-
+1.  **Configure Remote**
+    Ensure your local repository is connected to GitHub:
     ```bash
-    git init
-    git add .
-    git commit -m "Initial commit"
-    git branch -M main
     git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    git push -u origin main
     ```
 
-3.  **Deploy the Website**
-    This project is configured to use the `gh-pages` package for deployment. This builds the project and pushes the `dist` folder to a `gh-pages` branch on your repository.
-
-    Run the following command in your terminal:
-
+2.  **Deploy**
+    Run the deploy script:
     ```bash
     npm run deploy
     ```
 
-    *Note: This command will automatically run `npm run build` before deploying.*
+## Method 2: Manual Deployment (If automated fails)
 
-4.  **Configure GitHub Pages Settings**
-    - Go to your repository on GitHub.
-    - Click on **Settings** > **Pages**.
-    - Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-    - Under **Branch**, select `gh-pages` and `/ (root)`.
-    - Click **Save**.
+If you encounter errors like `RPC failed` or `branch already exists`, follow these steps to deploy manually:
 
-5.  **Access Your Website**
-    Wait a few minutes for the deployment to finish. You can see the progress in the "Actions" tab of your repository.
-    Once complete, your website will be live at:
-    `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+1.  **Build the Project**
+    ```bash
+    npm run build
+    ```
 
-## Troubleshooting
+2.  **Enter the Dist Folder**
+    ```bash
+    cd dist
+    ```
 
--   **404 Errors**: If assets are missing, ensure `vite.config.js` has `base: './'` set (already configured).
--   **Updates**: To deploy changes, simply commit your changes and run `npm run deploy` again.
+3.  **Initialize Git in Dist**
+    ```bash
+    git init
+    git checkout -b gh-pages
+    git add -A
+    git commit -m "deploy"
+    ```
+
+4.  **Push to GitHub**
+    Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual details.
+    *Note: The `-f` flag forces the push, overwriting the previous deployment.*
+    ```bash
+    git push -f https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git gh-pages
+    ```
+
+5.  **Return to Project Root**
+    ```bash
+    cd ..
+    ```
+
+## Configure GitHub Pages Settings
+
+1.  Go to your repository on GitHub.
+2.  Click on **Settings** > **Pages**.
+3.  Under **Build and deployment** > **Source**, select **Deploy from a branch**.
+4.  Under **Branch**, select `gh-pages` and `/ (root)`.
+5.  Click **Save**.
+
+## Access Your Website
+
+Wait a few minutes for the deployment to finish.
+Your website will be live at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
