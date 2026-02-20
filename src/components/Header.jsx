@@ -14,8 +14,8 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={`fixed top-[26px] left-1/2 -translate-x-1/2 z-50 w-full max-w-[1200px] px-4 animate-slide-in-header transition-all duration-300 ${scrolled ? 'top-[12px]' : ''}`}>
-      <div className={`flex items-center justify-between px-2 py-2 rounded-[18px] transition-all duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-white shadow-card'}`}>
+    <div className={`fixed top-[27px] left-1/2 -translate-x-1/2 z-50 w-[calc(100%-32px)] max-w-[1242px] animate-slide-in-header transition-all duration-300 ${scrolled ? 'top-[12px]' : ''}`}>
+      <div className={`flex items-center justify-between px-[7px] py-[9px] rounded-[18px] transition-all duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-white shadow-card'}`}>
         {/* Logo */}
         <div className="pl-4">
           <a href="#" className="block h-[28px] w-[56px] hover:opacity-80 transition-opacity">

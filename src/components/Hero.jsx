@@ -4,6 +4,7 @@ import OrderCard from './OrderCard';
 import DeliveryCard from './DeliveryCard';
 import QuantityCard from './QuantityCard';
 import ContactCard from './ContactCard';
+import AddressCard from './AddressCard';
 import {
   imgBgCircles as BgBlob,
   imgBgGlow as BgShape,
@@ -14,7 +15,7 @@ import {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative w-full min-h-screen bg-gradient-to-b from-bg-start to-bg-end overflow-hidden flex flex-col items-center rounded-[36px]">
+    <section id="hero" className="relative w-full min-h-screen bg-gradient-to-b from-bg-start to-bg-end flex flex-col items-center rounded-[36px] overflow-x-clip">
 
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-full overflow-visible pointer-events-none z-0">
@@ -26,7 +27,7 @@ export default function Hero() {
 
       <Header />
 
-      <div className="relative z-10 w-full max-w-[1242px] mx-auto px-4 lg:px-0 flex flex-col">
+      <div className="relative z-10 w-full max-w-[1242px] mx-auto px-4 lg:px-0 flex flex-col overflow-visible">
 
         {/* Headline Section */}
         <div className="mt-[137px] mx-auto max-w-[620px] flex flex-col items-center gap-6 text-center">
@@ -76,7 +77,7 @@ export default function Hero() {
           <div className="hidden lg:block absolute left-[calc(50%+174px)] top-[30px] z-10 opacity-0 animate-fade-in delay-1000">
             <img src={imgConnectorRight} alt="" className="w-[111px] h-[196px]" />
           </div>
-          <div className="hidden lg:block absolute left-[336px] top-[65px] z-10 opacity-0 animate-fade-in delay-1000">
+          <div className="hidden lg:block absolute left-[calc(50%-285px)] top-[65px] z-10 opacity-0 animate-fade-in delay-1000">
             <div className="-scale-y-100 rotate-180">
               <img src={imgConnectorLeft} alt="" className="w-[111px] h-[196px]" />
             </div>
@@ -90,16 +91,23 @@ export default function Hero() {
           </div>
 
           {/* Change Quantities Card (Right Bottom) */}
-          <div className="lg:absolute lg:left-[870px] lg:top-[167px] z-30 opacity-0 animate-fade-in-right delay-1000 mt-8 lg:mt-0">
-            <div className="animate-float-delayed">
+          <div className="lg:absolute lg:left-[870px] lg:top-[167px] z-30 opacity-0 animate-fade-in-right delay-1000 mt-8 lg:mt-0 hidden lg:block">
+            <div className="animate-float-delayed" style={{ transform: 'rotate(2.44deg)' }}>
               <QuantityCard />
             </div>
           </div>
 
-          {/* Contact Card (Left) */}
+          {/* Contact Card (Left Top) */}
           <div className="lg:absolute lg:left-[162px] lg:top-[-50px] z-30 opacity-0 animate-fade-in-left delay-800 hidden lg:block">
             <div className="animate-float-left">
               <ContactCard />
+            </div>
+          </div>
+
+          {/* Address Card (Left Bottom) */}
+          <div className="lg:absolute lg:left-[140px] lg:top-[170px] z-30 opacity-0 animate-fade-in-left delay-1000 hidden lg:block">
+            <div className="animate-float-delayed" style={{ transform: 'rotate(-2deg)' }}>
+              <AddressCard />
             </div>
           </div>
 
