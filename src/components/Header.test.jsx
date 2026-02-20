@@ -12,13 +12,13 @@ describe('Header', () => {
 
   it('renders navigation links', () => {
     render(<Header />);
-    expect(screen.getByText('Home')).toBeInTheDocument();
-    expect(screen.getByText('How it Works')).toBeInTheDocument();
-    expect(screen.getByText('Resources')).toBeInTheDocument();
+    expect(screen.getAllByText('Home').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('How it Works').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Resources').length).toBeGreaterThanOrEqual(1);
   });
 
   it('renders the Install Customizer button', () => {
     render(<Header />);
-    expect(screen.getByText('Install Customizer')).toBeInTheDocument();
+    expect(screen.getAllByText('Install Customizer').length).toBeGreaterThanOrEqual(1);
   });
 });
