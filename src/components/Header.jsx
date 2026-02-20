@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { imgGroup3 as InstallIcon, imgVector113 } from "../svg-q11ro";
 
-const Logo = "/assets/logo-final.svg";
+const Logo = `${import.meta.env.BASE_URL}assets/logo-final.svg`;
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

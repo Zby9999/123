@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useCountdown } from '../hooks/useScrollAnimation';
 
-const imgImage5 = "/assets/9511e9ed6815e537ccc7b12b529711a4523cad01.png";
+const imgImage5 = `${import.meta.env.BASE_URL}assets/9511e9ed6815e537ccc7b12b529711a4523cad01.png`;
 
 export default function OrderCard() {
   const { minutes, seconds } = useCountdown(29);

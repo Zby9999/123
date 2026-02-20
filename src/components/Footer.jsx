@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo = "/assets/logo-final.svg";
+const Logo = `${import.meta.env.BASE_URL}assets/logo-final.svg`;
 
 const footerLinks = {
   Product: ['Features', 'Pricing', 'Changelog', 'Integrations'],
