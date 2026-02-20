@@ -5,11 +5,11 @@ import DeliveryCard from './DeliveryCard';
 import QuantityCard from './QuantityCard';
 import ContactCard from './ContactCard';
 import {
-  imgVector as BgBlob,
-  imgVector7 as BgShape,
-  imgGroup3 as InstallIcon,
-  imgGroup1000011137,
-  imgGroup1000011138,
+  imgBgCircles as BgBlob,
+  imgBgGlow as BgShape,
+  imgInstallIcon as InstallIcon,
+  imgConnectorRight,
+  imgConnectorLeft,
 } from "../svg-q11ro";
 
 export default function Hero() {
@@ -74,11 +74,11 @@ export default function Hero() {
 
           {/* Connector arrows */}
           <div className="hidden lg:block absolute left-[calc(50%+174px)] top-[30px] z-10 opacity-0 animate-fade-in delay-1000">
-            <img src={imgGroup1000011137} alt="" className="w-[111px] h-[196px]" />
+            <img src={imgConnectorRight} alt="" className="w-[111px] h-[196px]" />
           </div>
           <div className="hidden lg:block absolute left-[336px] top-[65px] z-10 opacity-0 animate-fade-in delay-1000">
             <div className="-scale-y-100 rotate-180">
-              <img src={imgGroup1000011138} alt="" className="w-[111px] h-[196px]" />
+              <img src={imgConnectorLeft} alt="" className="w-[111px] h-[196px]" />
             </div>
           </div>
 

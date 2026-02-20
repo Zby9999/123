@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { imgGroup3 as InstallIcon, imgVector113 } from "../svg-q11ro";
+import { imgInstallIcon as InstallIcon, imgChevronDown } from "../svg-q11ro";
 
 const Logo = `${import.meta.env.BASE_URL}assets/logo-final.svg`;
 
@@ -39,7 +39,7 @@ export default function Header() {
                 Resources
               </span>
               <div className="w-[9px] h-[5px] transition-transform group-hover:rotate-180 duration-300">
-                <img alt="" className="w-full h-full" src={imgVector113} />
+                <img alt="" className="w-full h-full" src={imgChevronDown} />
               </div>
               {/* Dropdown */}
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-xl shadow-card p-3 min-w-[160px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
