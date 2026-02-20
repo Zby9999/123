@@ -23,4 +23,9 @@ describe('OrderCard', () => {
     render(<OrderCard />);
     expect(screen.getByText('Edit Your Order')).toBeInTheDocument();
   });
+
+  it('renders the countdown timer', () => {
+    render(<OrderCard />);
+    expect(screen.getByText(/to edit/i)).toBeInTheDocument();
+  });
 });
