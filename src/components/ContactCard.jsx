@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { imgVector as ArrowIcon } from "../svg-q11ro";
+import { imgTriangle } from "../svg-q11ro";
 
 export default function ContactCard() {
   const [phone, setPhone] = useState('+091 12345 67890');
@@ -10,8 +10,8 @@ export default function ContactCard() {
     <div className="flex flex-col gap-[5px] items-start w-[220px]">
       {/* Label */}
       <div className="bg-white flex gap-[5px] items-center p-[7px] rounded-[8px] shadow-card w-full">
-        <div className="w-[12px] h-[12px] shrink-0">
-          <img src={ArrowIcon} alt="" className="w-full h-full" />
+        <div className="w-[12px] h-[5px] shrink-0 rotate-180">
+          <img src={imgTriangle} alt="" className="w-full h-full" />
         </div>
         <span className="text-[11px] font-medium text-secondary font-inter tracking-[-0.34px]">Contact Info</span>
       </div>

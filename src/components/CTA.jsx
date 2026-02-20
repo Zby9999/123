@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { imgGroup3 as InstallIcon } from "../svg-q11ro";
+import { imgInstallIcon as InstallIcon } from "../svg-q11ro";
 
 export default function CTA() {
   const [ref, isVisible] = useScrollAnimation();
